@@ -56,14 +56,9 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Farmer Registry PDF Download</h1>
-      <button
-        className="bg-blue-500 text-white p-2 rounded mb-4"
-        onClick={handleDownloadPdf}
-      >
-        Download Farmer PDF
-      </button>
+    <div>
+      <h1>Farmer Registry PDF Download</h1>
+      <button onClick={handleDownloadPdf}>Download Farmer PDF</button>
       {/* Hidden printable content */}
       <div
         ref={printRef}
